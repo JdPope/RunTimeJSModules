@@ -1,4 +1,5 @@
 import {createDeleteButton} from './delete.js'
+import {createUpdateButton} from './updateBagel.js'
 
 const bagelUl = document.getElementById('bagel-ul')
 
@@ -8,6 +9,7 @@ function renderBagelType(bagel, id){
     li.id = id
     bagelUl.appendChild(li)
     createDeleteButton(li)
+    createUpdateButton(li)
 }
 
 export {renderBagelType}
