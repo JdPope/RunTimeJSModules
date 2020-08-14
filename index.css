@@ -18,16 +18,16 @@ li{
     padding:2px;
 }
 
-.item-a {
+header {
     grid-area: header;
   }
-  .item-b {
+  main {
     grid-area: main;
   }
-  .item-c {
+  aside {
     grid-area: aside;
   }
-  .item-d {
+  footer {
     grid-area: footer;
   }
   .container{
