@@ -1,0 +1,42 @@
+header {
+    border: 1px solid black;
+}
+
+#bagel-form{
+    border: 1px solid black;
+    padding:5px;
+}
+
+ul {
+    border: 1px solid black;
+    padding:5px;
+}
+
+li{
+    border: 1px solid black;
+    margin:5px;
+    padding:2px;
+}
+
+.item-a {
+    grid-area: header;
+  }
+  .item-b {
+    grid-area: main;
+  }
+  .item-c {
+    grid-area: aside;
+  }
+  .item-d {
+    grid-area: footer;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 15% 45% 25% 15%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header header header header"
+    "main main . aside"
+    "footer footer footer footer";
+    grid-auto-flow: row;
+}

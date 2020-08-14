@@ -1,4 +1,5 @@
-import {renderBagelType} from './bagelList.js'
+import {renderBagelType} from '../BagelList/bagelList.js'
+const base_url = 'http://bagel-api-fis.herokuapp.com/bagels'
 
 function createUpdateButton(li){
     const updateButton = document.createElement('button')
@@ -21,11 +22,23 @@ function createUpdateField(li){
     })
 }
 
-
 function captureUserUpdateInput(form){
     const newFormData = new FormData(form)
     const input = newFormData.get('update')
     renderBagelType(input, form.parentNode.id)
+    form.parentNode.remove()
+    persistUpdate(input, form.parentNode.id)
+}
+
+function persistUpdate(change,id){
+    fetch(`${base_url}/${id}`, {
+        method:'PUT',
+         headers:{
+            'content-type': 'application/json',
+            'accept': 'application/json'
+        },
+        body:JSON.stringify({type:change})
+    })
 }
 
 

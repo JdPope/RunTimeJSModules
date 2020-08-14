@@ -1,5 +1,5 @@
-import {createDeleteButton} from './delete.js'
-import {createUpdateButton} from './updateBagel.js'
+import {createDeleteButton} from '../DeleteBagel/delete.js'
+import {createUpdateButton} from '../UpdateBagel/updateBagel.js'
 
 const bagelUl = document.getElementById('bagel-ul')
 

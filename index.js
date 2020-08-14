@@ -1,5 +1,5 @@
-import {renderBagelType} from './bagelList.js'
-import {getUserInput} from './CreateBagel.js'
+import {renderBagelType} from './BagelList/bagelList.js'
+import {getUserInput} from './CreateBagel/CreateBagel.js'
 
 const base_url = 'http://bagel-api-fis.herokuapp.com/bagels'
 fetch(base_url)

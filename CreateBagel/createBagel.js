@@ -1,4 +1,4 @@
-import {renderBagelType} from './bagelList.js'
+import {renderBagelType} from '../BagelList/bagelList.js'
 
 const base_url = 'http://bagel-api-fis.herokuapp.com/bagels'
 
